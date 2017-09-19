@@ -1,0 +1,9 @@
+[package]
+
+name = "rust-systems"
+version = "0.0.1"
+authors = ["Juspreet S. Sandhu <jssandh2@illinois.edu>"] 
+
+[[bin]]
+name = "hello_world"
+path = "src/test/hello_world.rs"
