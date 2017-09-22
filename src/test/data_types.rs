@@ -21,8 +21,7 @@ fn main(){
    /* Variable bindings are enclosed lexically by blocks --> { .. } - Addressing them outside that
       scope on a popped stack leads to them not being found in the environment. 
    */
-   /* Blocks are recursively nested. Scoping into the stack works, but referencing popped scopes
-      does not However, the inverse does not.
+   /* Blocks are recursively nested. Scoping into the stack works, but referencing popped scopes does not.
    */
    {
        let y: i32 = 6;
@@ -32,9 +31,9 @@ fn main(){
    // Shadowing <--> Immutability aren't always interchangeable. Imm can lock mut via shadowing.
    let mut a: i32 = 8;
    a = 10;
-   let a = a; // a is now _immutable_ and *locked* to 10 (util shadowed).
-
-  // Mutability can also change types
-  let e = 5;
-  let e = "I am now a string!"; // e has changed types from i32 --> string
+   let a = a; // a is now _immutable_ and *locked* to 10 (util shadowed). 
+    
+   // Mutability can also change types
+   let e = 5;
+   let e = "I am now a string!"; // e has changed types from i32 --> string
 }
