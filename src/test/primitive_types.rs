@@ -23,4 +23,36 @@ fn main() {
     println!("Array a has : {} elements, and the 2nd element is: {}", a.len(), a[1]);
 
     let names = ["Juspreet", "Cook", "Levin"]; // names : [&str; 3]
+
+    // Slicing --> Pointer to a beginning, with a length. Combination of : {[], &}
+    // & --> Implies that a slice is similar to a Reference
+    let b = [0, 1, 2, 3, 4];
+    let b_duplicate = &b[..];  // A slice containing everything in `a`
+    let middle = &b[1..4];     // A slice of `a` : [1, 2, 3]
+
+    // str --> Unsized string type, that is useful when placed behind a reference `&` (`&str`)
+    // Tuples
+    let x = (1, "hello");
+    let y: (i32, &str) = (1, "hello");
+
+    let mut x = (1, 2);
+    let y = (2, 3);
+    x = y;   // A tuple is assigned to another (mutable) tuple, and type-check => The same Product-Type
+
+    // Pattern-match on tuples
+    let (x, y, z) = (1, 2, 3);
+    println!("x is : {}, y  is : {}, z is : {}", x, y, z);
+
+    let a = (0,); // Tuple of arity 1
+    let b = (0);  // Normal zero
+
+    // Indexing syntax
+    let tuple = (1, 2, 3);
+
+    let x = tuple.0;
+    let y = tuple.1;
+    let z = tuple.2;
+
+    // Functions --> Have arrow types
+    fn foo(x: i32) -> i32 { x } // foo : i32 -> i32
 }
