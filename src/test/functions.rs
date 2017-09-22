@@ -19,7 +19,7 @@ fn main(){
     let x: String = diverges();
 
     // To turn verbose backtrace (stack) on and compile : RUST_BACKTRACE=(1,full) cargo (run,build)
-// Functions can have pointers too : Function pointers
+    // Functions can have pointers too : Function pointers
     
     let f: fn(i32) -> i32;
     let f: fn(i32, i32) -> i32 = sum_number;

@@ -15,3 +15,7 @@ path = "src/test/data_types.rs"
 [[bin]]
 name = "functions"
 path = "src/test/functions.rs"
+
+[[bin]]
+name = "primitive_types"
+path = "src/test/primitive_types.rs"
