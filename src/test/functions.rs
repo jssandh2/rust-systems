@@ -6,6 +6,10 @@ fn sum_number(x: i32, y: i32) -> i32 {
     x + y
 }
 
+fn sum_number_three(x: i32, y: i32, z:i32) -> i32 {
+    x + y + z
+}
+
 // Divergent Types --> ! => \forall t \in T , t < !
 fn diverges() -> ! {
     panic!("This function diverges!");
@@ -29,5 +33,5 @@ fn main(){
     print_sum(4, 8);
     let z = sum_number(5, 6);
     diverges();
-    print_sum(f(5, 6), f(8, 9));
+    print_sum(f(5, 6), f(8, 9)); 
 }

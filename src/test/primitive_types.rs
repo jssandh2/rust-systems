@@ -3,7 +3,7 @@ fn main() {
     let x = true;
     let y: bool = false;
 
-    // Char
+    // Char --> 1 Char = 4 bytes (not 1 byte)
     let x = 'x';
     
     // Numeric Types
@@ -55,4 +55,6 @@ fn main() {
 
     // Functions --> Have arrow types
     fn foo(x: i32) -> i32 { x } // foo : i32 -> i32
+
+    fn two_foo(x: i32, y: i32) -> i32 { x + y } // two_foo : (i32 * i32) -> i32
 }
