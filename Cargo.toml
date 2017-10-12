@@ -23,3 +23,7 @@ path = "src/test/primitive_types.rs"
 [[bin]]
 name = "conditionals_and_loops"
 path = "src/test/conditionals_and_loops.rs"
+
+[[bin]]
+name = "vectors"
+path = "src/test/vectors.rs"
